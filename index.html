@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module">
+        import {round1,round2,round3,round4,round5,round6,round7} from "./index.js";
+        const roundsInOrder = [round1,round2,round3,round4,round5,round6,round7];
+
+        alert("Get ready to play! These rounds were designed by actual, living, breathing Aggies. Do you know USU? Let's find out");
+        let points = 0;
+        for(let round of roundsInOrder){
+            points = round(points)
+        }
+
+        alert(`Your final score is ${points}`);
+    </script>
+</body>
+</html>
