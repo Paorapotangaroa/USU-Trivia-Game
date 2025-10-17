@@ -1,4 +1,4 @@
-// Write you functions here:
+// Write your functions here:
 // 1) Each function should accept points as an input
 // 2) Each function should display a prompt quizzing the user on the correct answer to a piece of USU trivia (You choose the trivia question)
 // 3) If they answer correctly, return the input points + however many points you feel they deserve for being correct. 
