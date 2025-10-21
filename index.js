@@ -8,7 +8,7 @@
 
 
 // (Round 7, Tyson Lind)
-function round7(currentScore) {
+export function round7(currentScore) {
   const award = 3
   const answer = prompt('USU trivia: What city is Utah State University’s main campus located in?')
 
