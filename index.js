@@ -5,3 +5,23 @@
 // 4) Otherwise, return the original score
 // 5) Name your function according to the guidelines on canvas (e.g. round1, round2, etc.)
 // If you need more guidence, feel free to check index.html to see the main flow of the program.
+
+
+// (Round 7, Tyson Lind)
+function round7(currentScore) {
+  const award = 3
+  const answer = prompt('USU trivia: What city is Utah State University’s main campus located in?')
+
+  if (!answer) return currentScore
+
+  const normalizedAnswer = answer.trim().toLowerCase()
+  const correct = ['logan', 'logan utah', 'logan, utah']
+
+  if (correct.includes(normalizedAnswer)) {
+    alert(`Correct! +${award} points`)
+    return currentScore + award
+  } else {
+    alert('Not quite — the answer is Logan, Utah.')
+    return currentScore
+  }
+}
