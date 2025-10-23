@@ -14,5 +14,6 @@ function round1(points) {
     return points +20;
   }
   return points;
+}
 
 module.exports = { round1 };
