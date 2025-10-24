@@ -6,6 +6,8 @@
 // 5) Name your function according to the guidelines on canvas (e.g. round1, round2, etc.)
 // If you need more guidence, feel free to check index.html to see the main flow of the program.
 
+// Round 5 function
+
 function round5(points) {
   const answer = prompt(
     "What is the name of Utah State University's main library?"
