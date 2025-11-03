@@ -71,7 +71,7 @@ export function round7(currentScore) {
   }
 }
 function round4(points) {
-    usuQuestion = prompt("During Homecoming week fall 2025: When was True Aggie Night? Ex: 06/20/25");
+    let usuQuestion = prompt("During Homecoming week fall 2025: When was True Aggie Night? Ex: 06/20/25");
     if (usuQuestion === "10/17/25") {
         alert('Correct! Go Aggies!')
         return points + 20;
@@ -116,4 +116,4 @@ function round1(points) {
   return points;
 }
 
-module.exports = { round1 };
+export{ round1 };
