@@ -28,6 +28,16 @@ export function round6(points){
 // 4) Otherwise, return the original score: Done
 // 5) Name your function according to the guidelines on canvas (e.g. round1, round2, etc.) : Done
 // If you need more guidence, feel free to check index.html to see the main flow of the program.
+function round2(points){
+    let answer = prompt("What year was Utah State University founded?");
+    if (answer === "1888"){
+        return points + 5;
+    }
+    else {
+        return points
+    }
+}
+export{round2};
 
 //Round 1
 
