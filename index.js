@@ -1,9 +1,32 @@
 // Write your functions here:
-// 1) Each function should accept points as an input
-// 2) Each function should display a prompt quizzing the user on the correct answer to a piece of USU trivia (You choose the trivia question)
-// 3) If they answer correctly, return the input points + however many points you feel they deserve for being correct. 
-// 4) Otherwise, return the original score
-// 5) Name your function according to the guidelines on canvas (e.g. round1, round2, etc.)
+
+export function round6(points){
+// Ask USU Question
+  let answerR6 = prompt(
+    "What is the name of the Interim President (Dean) of USU?\n" +
+    "a) Alan Smith\n" +
+    "b) Toa Pita\n" +
+    "c) Mike Wizowski\n" +
+    "d) Harry Wiz. Potter"
+  ).trim().toLowerCase();
+  
+  // Check answer
+  if (answerR6 === 'a' || answerR6 === 'alan smith' || answerR6 === 'alansmith'){
+      alert('Correct! The dean is Alan L. Smith.');
+      return points + 60; 
+    
+  } else {
+      alert('Sorry, the answer was a, Alan L. Smith')
+      return points;
+  }
+
+}
+
+// 1) Each function should accept points as an input: Done
+// 2) Each function should display a prompt quizzing the user on the correct answer to a piece of USU trivia (You choose the trivia question): Done
+// 3) If they answer correctly, return the input points + however many points you feel they deserve for being correct. : Done, 60 points for round 6
+// 4) Otherwise, return the original score: Done
+// 5) Name your function according to the guidelines on canvas (e.g. round1, round2, etc.) : Done
 // If you need more guidence, feel free to check index.html to see the main flow of the program.
 
 function round4(points) {
@@ -17,3 +40,39 @@ function round4(points) {
     }
 }
 export { round4 };
+// Round 3
+
+function round3(points) {
+    let answer = parseFloat(prompt("How many stairs are there on old main?"));
+    if (answer === 124) {
+        alert("Wow you know your aggie trivia!")
+        return points + 20;
+    } else {
+        alert("Wrong answer. Guess you gotta take more walks up old main hill.")
+        return points;
+    };
+};
+
+export {round3};
+function round2(points){
+    let answer = prompt("What year was Utah State University founded?");
+    if (answer === "1888"){
+        return points + 5;
+    }
+    else {
+        return points
+    }
+}
+export{round2};
+
+//Round 1
+
+function round1(points) {
+  let answer = prompt('Trivia Question #1: What is the most popular flavor of Aggie Ice Cream?');
+  if (answer && answer.toLowerCase() === 'Aggie ROTC') {
+    return points +20;
+  }
+  return points;
+}
+
+module.exports = { round1 };
