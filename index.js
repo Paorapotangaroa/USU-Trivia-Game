@@ -29,6 +29,17 @@ export function round6(points){
 // 5) Name your function according to the guidelines on canvas (e.g. round1, round2, etc.) : Done
 // If you need more guidence, feel free to check index.html to see the main flow of the program.
 
+function round4(points) {
+    usuQuestion = prompt("During Homecoming week fall 2025: When was True Aggie Night? Ex: 06/20/25");
+    if (usuQuestion === "10/17/25") {
+        alert('Correct! Go Aggies!')
+        return points + 20;
+    } else {
+        alert("Sorry not correct :( Learn your dates");
+        return points;
+    }
+}
+export { round4 };
 // Round 3
 
 function round3(points) {
